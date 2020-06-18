@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif;
+    color: #333131;
+}
+
+/* creates the grid for layout */
+main {
+    display: grid;
+    grid-template-columns: 1.5rem auto 1.5rem;
+    grid-template-rows: auto auto auto;
+    grid-template-areas:
+        ". header ."
+        ". section ."
+        ". footer .";
+}
+
+/* HEADER SECTION */
+
+header {
+    grid-area: header;
+    background-color: #f7f7ff;
+    margin: 0rem -1.5rem;
+    padding: 0rem 1.5rem;
+}
+
+#logo {
+    height: 100px;
+    width: 100px;
+}
+
+/* SECTION SECTION */
+
+/* sets up background image */
+section {
+    grid-area: section;
+    background-image: url("../images/bg-image/scooter.svg");
+    background-repeat: no-repeat;
+    background-position: center 31%;
+    background-size: 85%;
+    background-color: #f7f7ff;
+    margin: 0rem -1.5rem;
+    padding: 0rem 1.5rem;
+}
+
+.section-info h1 {
+    margin: 0rem;
+    font-size: 3rem;
+}
+
+.section-info p {
+    margin-top: .5rem;
+}
+
+/* styles the section form */
+.section-form {
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 6px 6px 30px -10px #333131;
+    padding: 1rem;
+    margin-top: 15rem;
+    margin-bottom: 3rem;
+}
+
+.section-form h1 {
+    margin: 0rem;
+    font-size: 2.5rem;
+}
+
+.section-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* styles inputs for section form */
+form input {
+    padding: .5rem;
+    margin-bottom: 1rem;
+    background-color: #f7f7ff;
+    border: none;
+    border-radius: 6px;
+}
+
+.checkbox {
+    display: flex;
+}
+
+#agree {
+    height: 1.2rem;
+    width: 1.2rem;
+    border-radius: 5px;
+    margin-right: .5rem;
+}
+
+/* styles buton for section form */
+.section-form form button {
+    background-color: #57eabb;
+    color: #333131;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 1rem 0rem;
+}
+
+.section-form form button h3 {
+    margin: .8rem 0rem;
+}
+
+.section-form p a:link,
+.section-form p a:visited {
+    color: #ff8480;
+    text-decoration: none;
+}
+
+/* FOOTER SECTION */
+
+footer {
+    grid-area: footer;
+    background-color: #fffd8c;
+    margin: 0rem -1.5rem;
+    padding: 0rem 1.5rem;
+}
+
+.footer-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.calculate {
+    display: flex;
+    justify-content: space-between;
+}
+
+#hours {
+    width: 25%;
+}
+
+#city {
+    width: 70%;
+}
+
+/* styles the footer form button */
+.footer-form button {
+    flex-grow: 1;
+    background-color: #ff8480;
+    color: #f7f7ff;
+    border: none;
+    border-radius: 7px;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+    font-weight: 600;
+    padding: .5rem 0rem;
+}
+
+.footer-form button h3 {
+    margin: .5rem 0rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.5rem;
+}
+
+@media (min-width: 768px) {
+
+    main {
+        grid-template-columns: 6rem auto 6rem;
+    }
+
+    /* HEADER SECTION */
+
+    header {
+        margin: 0rem -6rem;
+        padding: 0rem 6rem;
+    }
+
+    /* SECTION SECTION */
+
+    /* changes the position of the background */
+    section {
+        background-position: center 18%;
+        background-size: 50%;
+        margin: 0rem -6rem;
+        padding: 0rem 6rem;
+    }
+
+    .section-info p {
+        margin-top: 1rem;
+    }
+
+    /* moves the section form lower on the page */
+    .section-form {
+        display: flex;
+        flex-direction: column;
+        margin-top: 20rem;
+        margin-bottom: 6rem;
+        padding: 1.5rem 2.5rem;
+    }
+
+    .section-form h1 {
+        font-size: 2rem;
+    }
+
+    /* adds padding to the inputs exept the checkbox */
+    .section-form form input:not(#agree) {
+        padding: 1rem;
+    }
+
+    .section-form p:nth-child(2) {
+        font-size: 1.5rem;
+        margin-top: 1rem;
+    }
+
+    .section-form p:nth-child(4) {
+        text-align: center;
+    }
+
+    .section-form button {
+        font-size: 1.5rem;
+    }
+
+    /* FOOTER SECTION */
+
+    footer {
+        margin: 0rem -6rem;
+        padding: 0rem 6rem;
+    }
+
+    .footer-form {
+        flex-direction: row;
+    }
+
+    .footer-form button {
+        margin-left: 1rem;
+    }
+
+    .icons {
+        margin: 0rem 8rem 1.5rem 8rem;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    /* SECTION SECTION */
+
+    /* changes the position of the background */
+    section {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        background-position: center;
+        padding-top: 6rem;
+        background-position: center;
+        background-size: 40%;
+    }
+
+    .section-info {
+        width: 30%;
+    }
+
+    .section-info h1 {
+        font-size: 5rem;
+    }
+
+    .section-info p {
+        font-size: 1.5rem;
+    }
+
+    .section-form {
+        margin-top: 0rem;
+    }
+
+    /* FOOTER SECTION */
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .footer-form button {
+        width: 35%;
+    }
+
+    .icons {
+        margin: 0rem;
+    }
+
+    .icons img {
+        margin-left: 2rem;
+    }
+}
