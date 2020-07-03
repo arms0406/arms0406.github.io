@@ -13,17 +13,23 @@ img {
     width: 100%;
 }
 
+p {
+    color: #3C3B3A;
+}
+
 main {
     display: grid;
-    grid-template-columns: 36px 1fr 36px;
-    grid-template-rows: 225px auto auto auto auto 125;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto auto auto;
     grid-template-areas: 
-    ". header ."
-    ". facilities ."
-    ". algonquin ."
-    ". quote ."
-    ". entertainment ."
-    ". footer .";
+    "header"
+    "facilities"
+    "school"
+    "algonquin"
+    "quote"
+    "entertainment"
+    "beer"
+    "footer";
 }
 
 /* HEADER */
@@ -33,25 +39,25 @@ header {
     align-items: center;
     grid-area: header;
     background-color: #3C3B3A;
-    margin: 0 -36px;
+    padding: 0 36px;
 }
 
 #logo {
-    width: 88px;
-    height: 54px;
+    width: 125px;
+    height: 91px;
 }
 
 nav ul {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 0;
+    margin: 0;
     padding: 0;
 }
 
 nav ul li {
     list-style-type: none;
-    margin-top: 1rem;
+    margin-bottom: 1rem;
 }
 
 .nav-links {
@@ -66,10 +72,12 @@ nav ul li {
 
 .facilities {
     grid-area: facilities;
+    padding: 0 36px;
 }
 
 .books {
-    margin: 45px 0px;
+    margin-top: 45px;
+    margin-bottom: 25px ;
 }
 
 .facilities-info h1 {
@@ -126,24 +134,95 @@ nav ul li {
 .algonquin {
     grid-area: algonquin;
     background-color: #F2F2F2;
-    margin: 0 -36px;
+    padding: 0 36px;
 }
 
-.discover {
-    margin: 0 36px;
+.school {
+    grid-area: school;
+}
+
+.discover h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.discover h4 {
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #26A682;
+}
+
+.discover p {
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 35px;
+}
+
+.discover button {
+    font-size: 1.25;
+    font-weight: 700;
+    height: 45px;
+    width: 146px;
+    color: #F2F2F2;
+    background-color: #26A682;
+    border: none;
+    border-radius: 40px;
+    box-shadow: 0px 10px 20px -5px  #124A3A;
+    margin-bottom: 2rem;
+    float: right;
 }
 
 .quote {
     grid-area: quote;
     background-color: #3C3B3A;
+    padding: 0 36px;
 }
 
 .entertainment {
     grid-area: entertainment;
     background-color: #F2F2F2;
+    padding: 0 36px;
+}
+
+.beer {
+    grid-area: beer;
 }
 
 footer {
     grid-area: footer;
+    display: flex;
+    align-content: center;
     background-color: #3C3B3A;
+    padding: 0 36px;
+}
+
+.social-media p {
+    text-align: center;
+    color: #F2F2F2;
+    margin-bottom: 6px;
+}
+
+.social-icon {
+    width: 25px;
+    height: 25px;
+}
+
+.top-arrow {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 48px;
+    margin: 0;
+}
+
+.top-arrow img {
+    width: 22px;
+    height: 22px;
+    align-self: center;
+}
+
+.top-arrow p {
+    font-size: 9px;
+    color: #F2F2F2;
 }
