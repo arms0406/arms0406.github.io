@@ -114,7 +114,57 @@ p {
     margin: 0 0 1rem 0;
 }
 
-/* LAYOUT-HOME */
+/* ANIMATIONS */
+@keyframes shake {
+
+    0%,
+    100% {
+        transform: rotate(0);
+        transform-origin: 50% 100%;
+    }
+
+    33% {
+        transform: rotate(1deg);
+    }
+
+    66% {
+        transform: rotate(-2deg);
+    }
+
+    100% {
+        transform: rotate(0);
+    }
+}
+
+.shake {
+    animation-name: shake;
+    animation-duration: 1s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+
+@keyframes down {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    100% {
+        transform: translateY(5px);
+    }
+
+}
+
+.down {
+    animation-name: down;
+    animation-duration: 0.8s;
+    animation-direction: alternate;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: infinite;
+}
+
+/* LAYOUT INDEX.HTML */
 #main-home {
     display: grid;
     grid-template-columns: 1fr;
@@ -163,13 +213,13 @@ nav ul {
 }
 
 .nav-links:hover,
-.navlinks:active {
+.nav-links:active {
     font-size: 1.125rem;
     font-weight: 700;
 }
 
 .nav-links:link,
-.nav-links:active {
+.nav-links:visited {
     color: var(--light);
 }
 
@@ -224,7 +274,7 @@ nav ul {
     height: 200px;
 }
 
-/* CLASS: DISCOVER */
+/* SECTION: ALGOQNUIN & ENTERTAINMENT */
 .discover {
     display: flex;
     flex-direction: column;
@@ -267,7 +317,7 @@ nav ul {
     margin: 0 0 1rem 0;
 }
 
-/* SECTION: ENTERTINMENT */
+/* SECTION: ENTERTAINMENT */
 #entertainment {
     grid-area: entertainment;
     padding: 0rem 2rem;
@@ -284,7 +334,7 @@ nav ul {
     height: 200px;
 }
 
-/* LAYOUT_ABOUT */
+/* LAYOUT ABOUT.HTML */
 #main-about {
     display: grid;
     grid-template-columns: 1fr;
@@ -304,6 +354,7 @@ nav ul {
         "footer";
 }
 
+/* SECTION: CONSTRUCTION */
 #construction {
     grid-area: construction;
     padding: 0rem 2rem;
@@ -313,6 +364,7 @@ nav ul {
     margin-bottom: 1.5rem;
 }
 
+/* SECTION: ABOUT */
 #about {
     grid-area: about;
     display: flex;
@@ -330,11 +382,13 @@ nav ul {
     width: 100%;
 }
 
+/* SECTION: QUESTIONS */
 #questions {
     grid-area: questions;
     padding: 0rem 2rem;
 }
 
+/* SECTION: SERVICES */
 #services {
     grid-area: services;
     display: flex;
@@ -343,7 +397,7 @@ nav ul {
     font-size: 1.5rem;
     font-weight: 700;
     background: url(../images/services.jpg) rgba(38, 166, 130, 1);
-    background-size: contain;
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-blend-mode: multiply;
@@ -362,6 +416,7 @@ nav ul {
     padding: 0rem 2rem;
 }
 
+/* SECTION: SUBSCRIBE */
 #subscribe {
     grid-area: subscribe;
     display: flex;
@@ -394,6 +449,14 @@ nav ul {
     padding: 0rem 2rem;
 }
 
+.restaurant-content h2,
+.bowling-content h2,
+.fitness-rooms-content h2,
+.rock-climbing-content h2 {
+    margin-bottom: .5rem;
+}
+
+/* SECTION: SPECIAL */
 #special {
     grid-area: special;
     padding: 0rem 2rem;
@@ -578,7 +641,7 @@ iframe {
 
 @media (min-width: 768px) {
     .cta {
-        width: 40%;
+        width: 45%;
     }
 
     .submit {
@@ -844,6 +907,10 @@ iframe {
     }
 
     /* CONTACT */
+    #contact-us {
+        margin-top: 2rem;
+    }
+
     #contact-content {
         padding: 0rem 5rem;
         margin-top: 2rem;
@@ -970,6 +1037,7 @@ iframe {
 
     #name-title {
         width: 20%;
+        margin: 0 3rem;
     }
 
     #entertainment {
@@ -1038,6 +1106,16 @@ iframe {
     #restaurants {
         grid-template-columns: 1fr 1fr;
         padding: 4rem 8.75rem;
+    }
+
+    .restaurant-content,
+    .fitness-rooms-content {
+        margin-left: 2rem;
+    }
+
+    .bowling-content,
+    .rock-climbing-content {
+        margin-right: 2rem;
     }
 
     #bowling {
