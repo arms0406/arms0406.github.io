@@ -212,15 +212,16 @@ nav ul {
     text-decoration: none;
 }
 
+.nav-links:link,
+.nav-links:visited {
+    color: var(--light);
+
+}
+
 .nav-links:hover,
 .nav-links:active {
     font-size: 1.125rem;
     font-weight: 700;
-}
-
-.nav-links:link,
-.nav-links:visited {
-    color: var(--light);
 }
 
 /* SECTION: FACILITIES */
@@ -498,6 +499,7 @@ nav ul {
     height: 138px;
 }
 
+/* LAYOUT CONTACT.HTML */
 #main-contact {
     display: grid;
     grid-template-columns: 1fr;
@@ -511,6 +513,7 @@ nav ul {
         "footer";
 }
 
+/* SECTION: CONTACT CONTENT */
 #contact-content {
     grid-area: contact-content;
     padding: 0rem 2rem;
@@ -520,6 +523,7 @@ nav ul {
     margin-bottom: 1rem;
 }
 
+/* SECTION: CONTACT */
 #contact {
     grid-area: contact;
     padding: 0rem 2rem 2rem 2rem;
@@ -564,6 +568,7 @@ form button {
     margin-bottom: 0;
 }
 
+/* SECTION: CONTACT INFO */
 #contact-info {
     grid-area: contact-info;
     padding: 0rem 2rem 2rem 2rem;
@@ -585,8 +590,11 @@ form button {
 
 iframe {
     grid-area: google-maps;
+    width: 100%;
+    height: 250px;
 }
 
+/* FOOTER */
 #footer {
     grid-area: footer;
     display: flex;
@@ -639,7 +647,10 @@ iframe {
     line-height: 1rem;
 }
 
+/* TABLET VIEW */
 @media (min-width: 768px) {
+
+    /* ELEMENT DEFAULTS */
     .cta {
         width: 45%;
     }
@@ -674,6 +685,8 @@ iframe {
         font-size: 1.125rem;
     }
 
+    /* HOMEPAGE */
+    /* HEADER */
     header {
         flex-direction: row;
         justify-content: space-between;
@@ -699,6 +712,7 @@ iframe {
         margin-left: 1.5rem;
     }
 
+    /* SECTION: FACILITIES */
     #facilities {
         padding: 0rem 5rem;
     }
@@ -755,6 +769,7 @@ iframe {
         padding: 0rem 5rem;
     }
 
+    /* SECTION: QUOTE */
     #quote {
         display: flex;
     }
@@ -774,21 +789,25 @@ iframe {
         margin-top: 2rem;
     }
 
-    /* ABOUT */
+    /* ABOUT PAGE */
+    /* SECTION: CONSTRUCTION */
     #construction {
         padding: 0rem 5rem;
         margin-top: 2rem;
     }
 
+    /* SECTION: ABOUT */
     #about {
         background-position: center;
         background-size: cover;
     }
 
+    /* SECTION: QUESTIONS */
     #questions {
         padding: 0rem 5rem;
     }
 
+    /* SECTION SERVICES */
     #services {
         background-position: center;
         background-size: 100% 280%;
@@ -830,6 +849,7 @@ iframe {
         background-repeat: no-repeat;
     }
 
+    /* SECTION: SUBSCRIBE */
     #subscribe {
         display: flex;
         flex-direction: row;
@@ -906,7 +926,7 @@ iframe {
         height: 138px;
     }
 
-    /* CONTACT */
+    /* CONTACT PAGE */
     #contact-us {
         margin-top: 2rem;
     }
@@ -956,12 +976,16 @@ iframe {
     }
 }
 
+/* DESKTOP VIEW */
 @media (min-width: 1920px) {
+
+    /* ELEMENT DEFAULTS */
     .cta {
         width: 62%;
         font-size: 2.5rem;
     }
 
+    /* HOMEPAGE */
     header {
         padding: 0rem 8.75rem;
     }
@@ -1057,7 +1081,7 @@ iframe {
         background-size: cover;
     }
 
-    /* ABOUT */
+    /* ABOUT PAGE */
     #main-about {
         grid-template-rows: repeat(7, auto) 100px repeat(3, auto) 125px;
     }
@@ -1157,6 +1181,7 @@ iframe {
         flex-direction: row;
     }
 
+    /* CONTACT PAGE */
     #contact-us {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
