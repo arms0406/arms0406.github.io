@@ -514,6 +514,8 @@ form button {
 }
 
 #contact-info h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
     margin-bottom: .5rem;
 }
 
@@ -590,8 +592,14 @@ iframe {
         font-size: 4.5rem;
     }
 
-    .heading-three {
+    .heading-two {
         font-size: 2.5rem;
+        margin-bottom: .5rem;
+    }
+
+    .heading-three {
+        font-size: 2rem;
+        margin-bottom: .5rem;
     }
 
     .regular-text {
@@ -668,8 +676,9 @@ iframe {
     }
 
     #scroll p {
-        margin: 0;
+        margin: 0 0 .2rem 0;
         text-align: center;
+        line-height: 1rem;
     }
 
     #scroll img {
@@ -691,8 +700,9 @@ iframe {
         margin-right: 2rem;
     }
 
-    #name-title p {
+    #name-title>p {
         margin-top: 0;
+        width: 200px;
     }
 
     #quote>p {
@@ -706,28 +716,54 @@ iframe {
         margin-top: 2rem;
     }
 
+    #about {
+        background-position: center;
+        background-size: cover;
+    }
+
     #questions {
         padding: 0rem 5rem;
     }
 
+    #services {
+        background-position: center;
+        background-size: 100% 280%;
+    }
+
     #restaurants {
-        padding: 0rem 5rem;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr;
+        padding: 4rem 5rem;
+    }
+
+    .restaurant-content {
+        margin-left: 1rem;
+    }
+
+    #restaurant-img {
+        background-image: url(../images/bar.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     #bowling {
-        display: flex;
-        padding: 0rem 5rem;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 1fr;
+        padding: 4rem 5rem;
+    }
+
+    .bowling-content {
+        margin-right: 1rem;
     }
 
     #bowling-img {
         background-image: url(../images/bowling.jpg);
-        width: 30%;
-        height: 375px;
-    }
-
-
-    #bowling-content {
-        width: 60%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     #subscribe {
@@ -747,15 +783,63 @@ iframe {
     }
 
     #fitness-rooms {
-        padding: 0rem 5rem;
+        display: grid;
+        grid-template-columns: 40% 60%;
+        grid-template-rows: 1fr;
+        padding: 4rem 5rem;
+    }
+
+    .fitness-rooms-content {
+        margin-left: 1rem;
+    }
+
+    #fitness-room-img {
+        background-image: url(../images/fitness.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     #rock-climbing {
-        padding: 0rem 5rem;
+        display: grid;
+        grid-template-columns: 60% 40%;
+        grid-template-rows: 1fr;
+        padding: 4rem 5rem;
+    }
+
+    .rock-climbing-content {
+        margin-right: 1rem;
+    }
+
+    #rock-climbing-img {
+        background-image: url(../images/climbing.jpg);
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
     }
 
     #special {
         padding: 0rem 5rem;
+    }
+
+    .sa {
+        width: 435px;
+        height: 125px;
+    }
+
+    .ac {
+        width: 202px;
+        height: 168px;
+    }
+
+    .pcl {
+        width: 220px;
+        height: 154px;
+    }
+
+    .cibc {
+        width: 152px;
+        height: 138px;
     }
 
     /* CONTACT */
@@ -791,6 +875,11 @@ iframe {
 
     #contact-info {
         padding: 3rem 5rem 2rem 5rem;
+    }
+
+    #contact-info h3 {
+        font-weight: 400;
+        font-size: 2.5rem;
     }
 
     iframe {
@@ -849,5 +938,118 @@ iframe {
     #books {
         width: 60%;
         margin-left: 6rem;
+    }
+
+    #algonquin {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 6rem 8.75rem;
+    }
+
+    #school {
+        display: none;
+    }
+
+    .school-desktop {
+        background-image: url(../images/school.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    #quote {
+        justify-content: space-between;
+        padding: 2rem 8.75rem;
+    }
+
+    #profile {
+        flex-direction: row;
+    }
+
+    #name-title {
+        width: 20%;
+    }
+
+    #entertainment {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        padding: 6rem 8.75rem;
+    }
+
+    #beer {
+        display: none;
+    }
+
+    .beer-desktop {
+        background-image: url(../images/entertainment.jpg);
+        background-position: center;
+        background-size: cover;
+    }
+
+    /* ABOUT */
+    #construction {
+        display: flex;
+        margin: 10.25rem 0;
+    }
+
+    #construction-info {
+        margin-right: 1rem;
+    }
+
+    #construction-info h1 {
+        margin-top: 0;
+    }
+
+    #about {
+        height: 250px;
+    }
+
+    #questions {
+        display: grid;
+        grid-gap: 4rem;
+        grid-template-columns: repeat(3, 1fr);
+        padding: 10.25rem 8.75rem;
+    }
+
+    #services {
+        height: 250px;
+    }
+
+    #restaurants {
+        padding: 4rem 8.75rem;
+    }
+
+    #bowling {
+        padding: 4rem 8.75rem;
+    }
+
+    #fitness-rooms {
+        padding: 4rem 8.75rem;
+    }
+
+    #rock-climbing {
+        padding: 4rem 8.75rem;
+    }
+
+    #special {
+        padding: 6rem 8.75rem;
+    }
+
+    #brands {
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+    }
+
+    #top-arrow a {
+        width: 50px;
+        height: 50px;
+    }
+
+    #top-arrow p {
+        font-size: 1rem;
+        width: 85px;
+        margin-top: .5rem;
     }
 }
