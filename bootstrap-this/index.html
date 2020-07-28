@@ -30,15 +30,15 @@
                     </button>
                     <div id="navbarNav" class="collapse navbar-collapse">
                         <div class="navbar-nav ml-auto">
-                            <a href="#intro" class="nav-link">Features</a>
-                            <a href="#card" class="nav-link">Cards</a>
-                            <a href="#" class="nav-link">Jumbotron</a>
+                            <a href="#features" class="nav-link">Features</a>
+                            <a href="#how-to" class="nav-link">How to</a>
+                            <a href="#components" class="nav-link">Components</a>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
-        <div class="row">
+        <div id="features" class="row">
             <div class="col-12 p-0 bg-secondary text-white">
                 <div id="benefits" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -84,7 +84,7 @@
                 </div>
             </div>
         </div>
-        <div class="row bg-dark text-white py-5">
+        <div id="how-to" class="row bg-dark text-white py-5">
             <div class="col-12">
                 <h1 class="text-center display-4">How to use Bootstrap</h1>
                 <p>Bootstrap uses a mobile-first 12 column flexbox grid to build layouts. The first step is to set a
@@ -113,24 +113,36 @@
                 </div>
             </div>
         </div>
-        <div class="row bg-secondary text-white py-5">
+        <div id="components" class="row bg-secondary text-white py-5">
             <div class="col-12 mb-5">
                 <h1 class="text-center display-4">Components</h1>
                 <h2>Buttons</h2>
-                <button type="button" class="btn btn-primary">Primary</button>
-                <button type="button" class="btn btn-secondary">Secondary</button>
-                <button type="button" class="btn btn-success">Success</button>
-                <button type="button" class="btn btn-danger">Danger</button>
-                <button type="button" class="btn btn-warning">Warning</button>
-                <button type="button" class="btn btn-info">Info</button>
-                <button type="button" class="btn btn-light">Light</button>
-                <button type="button" class="btn btn-dark">Dark</button>
-                <button type="button" class="btn btn-link">Link</button>
+                <p>Use Bootstrap’s custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.</p>
+                <div class="row">
+                    <div class="col-4 d-flex flex-column">
+                        <button type="button" class="btn btn-primary mb-3">Primary</button>
+                        <button type="button" class="btn btn-secondary mb-3">Secondary</button>
+                        <button type="button" class="btn btn-success mb-3">Success</button>
+                    </div>
+                    <div class="col-4 d-flex flex-column">
+                        <button type="button" class="btn btn-danger mb-3">Danger</button>
+                        <button type="button" class="btn btn-warning mb-3">Warning</button>
+                        <button type="button" class="btn btn-info" mb-3>Info</button>
+                    </div>
+                    <div class="col-4 d-flex flex-column">
+                        <button type="button" class="btn btn-light mb-3">Light</button>
+                        <button type="button" class="btn btn-dark mb-3">Dark</button>
+                        <button type="button" class="btn btn-link mb-3">Link</button>
+                    </div>
+                </div>
             </div>
-            <div class="col-sm-12 col-md-6 mb-5">
+            <div class="col-12">
                 <h2>Cards</h2>
+                <p>Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.</p>
+            </div>    
+            <div class="col-sm-12 col-md-6 mb-5">
                 <div class="card bg-dark">
-                    <img class="card-img-top" src="#" alt="">
+                    <img class="card-img-top" src="img/computer.jpg" alt="code">
                     <div class="card-body">
                         <h3 class="card-title">Project 1</h3>
                         <p class="card-text">This project is the best project. No project has ever been better.</p>
@@ -157,6 +169,7 @@
             </div>
             <div class="col-12">
                 <h2>Badges</h2>
+                <p>Documentation and examples for badges, our small count and labeling component.</p>
                 <h3>The Auto Web Developer 3000<span class="badge badge-danger ml-2">On Sale</span></h3>
             </div>
         </div>
