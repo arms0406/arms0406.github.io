@@ -30,121 +30,135 @@
                     </button>
                     <div id="navbarNav" class="collapse navbar-collapse">
                         <div class="navbar-nav ml-auto">
-                            <a href="#intro" class="nav-link">Home</a>
-                            <a href="#card" class="nav-link">Card</a>
-                            <a href="#" class="nav-link">Link</a>
+                            <a href="#intro" class="nav-link">Features</a>
+                            <a href="#card" class="nav-link">Cards</a>
+                            <a href="#" class="nav-link">Jumbotron</a>
                         </div>
                     </div>
                 </nav>
             </div>
         </div>
-    </div>
-    <!-- Jumbotron -->
-    <div class="row">
-        <div class="col-12">
-            <div id="intro" class="jumbotron jumbotron-fluid">
-                <div class="container">
-                    <h1 class="display-4">Bootstrap</h1>
-                    <p class="lead">Create amazing looking web experiences with Bootstrap!</p>
-                    <hr>
-                    <p>Open Source, Mobile First, Compnents Library </p>
+        <div class="row">
+            <div class="col-12 p-0 bg-secondary text-white">
+                <div id="benefits" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#benefits" data-slide-to="0" class="active"></li>
+                        <li data-target="#benefits" data-slide-to="1"></li>
+                        <li data-target="#benefits" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner p-5">
+                        <div class="carousel-item active">
+                            <h1 class="display-3">Features</h1>
+                            <hr>
+                            <h2>Open Source</h2>
+                            <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly
+                                prototype
+                                your ideas or build your entire app with our Sass variables and mixins, responsive grid
+                                system, extensive prebuilt components, and powerful plugins built on jQuery.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h1 class="display-3">Features</h1>
+                            <hr>
+                            <h2>Mobile First</h2>
+                            <p>Bootstrap includes a powerful mobile-first flexbox grid to build layouts of all shapes
+                                and
+                                sizes thanks to a twelve column system, five default responsive tiers, Sass variables
+                                and
+                                mixins, and dozens of predefined classes.</p>
+                        </div>
+                        <div class="carousel-item">
+                            <h1 class="display-3">Features</h1>
+                            <hr>
+                            <h2>Components Library</h2>
+                            <p>Bootstrap comes with an extensive components library that includes buttons and lists to
+                                carousels and modals. Components are easy to integrate into any site and require no
+                                knowledge of JavaScript to use.</p>
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#benefits" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    </a>
+                    <a class="carousel-control-next" href="#benefits" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    </a>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- FEATURES -->
-    <div class="row">
-        <div class="col-12">
-            <h2 class="display-4 pb-4">What makes Bootstrap great?</h2>
-        </div>
-        <div class="col-sm-12 col-md-4">
-            <h3 class="display-6">Open Source</h3>
-            <p>Bootstrap is an open source toolkit for developing with HTML, CSS, and JS. Quickly prototype your ideas
-                or build your entire app with our Sass variables and mixins, responsive grid system, extensive prebuilt
-                components, and powerful plugins built on jQuery.</p>
-        </div>
-        <div class="col-sm-12 col-md-4">
-            <h3 class="display-6">Mobile First</h3>
-            <p>Bootstrap includes a powerful mobile-first flexbox grid to build layouts of all shapes and sizes thanks
-                to a twelve column system, five default responsive tiers, Sass variables and mixins, and dozens of
-                predefined classes.</p>
-        </div>
-        <div class="col-sm-12 col-md-4">
-            <h3 class="display-6">Components Library</h3>
-            <p>Bootstrap comes with an extensive components library that includes buttons and lists to carousels and
-                modals. Components are easy to integrate into any site and require no knowledge of JavaScript to use.
-            </p>
-        </div>
-    </div>
-    <hr>
-    <!-- COMPONENTS -->
-    <div class="row">
-        <div class="col-12">
-            <h2 class="display-4">Components</h2>
-            <h3>Cards</h3>
-            <p>Bootstrap’s cards provide a flexible and extensible content container with multiple variants and options.
-            </p>
-        </div>
-        <div class="col-sm-12 col-md-3">
-            <div id="card" class="card mb-4">
-                <img class="card-img-top" src="https://via.placeholder.com/375" alt="Placeholder">
-                <div class="card-body">
-                    <h3>The Question Card</h3>
-                    <p>Is card god real?</p>
-                    <p>Am i the only card?</p>
-                    <p>What is my purpose as a card?</p>
-                    <div class="d-flex justify-content-between">
-                        <a class="btn btn-dark" href="#">More Questions</a>
+        <div class="row bg-dark text-white py-5">
+            <div class="col-12">
+                <h1 class="text-center display-4">How to use Bootstrap</h1>
+                <p>Bootstrap uses a mobile-first 12 column flexbox grid to build layouts. The first step is to set a
+                    container
+                    that all the content within the page will go into with class="container". The second step is to
+                    define your rows within
+                    the container with class="rows". The third step is too define how much size each column takes up class="col-{breakpoint}-{# of columns}".
+                </p>
+                <h2>Example:</h2>
+                <div class="container text-center">
+                    <div class="row">
+                        <div class="col-12 bg-warning text-dark">col-12</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-6 bg-primary">col-6</div>
+                        <div class="col-6 bg-primary">col-6</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-4 bg-light text-dark">col-4</div>
+                        <div class="col-4 bg-light text-dark">col-4</div>
+                        <div class="col-4 bg-light text-dark">col-4</div>
+                    </div>
+                    <div class="row">
+                        <div class="col-12 bg-warning text-dark">col-12</div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="col-sm-12 col-md-3">
-            <div id="card" class="card mb-4">
-                <img class="card-img-top" src="https://via.placeholder.com/375" alt="Placeholder">
-                <div class="card-body">
-                    <h3>The Question Card</h3>
-                    <p>Is card god real?</p>
-                    <p>Am i the only card?</p>
-                    <p>What is my purpose as a card?</p>
-                    <div class="d-flex justify-content-between">
-                        <a class="btn btn-dark" href="#">More Questions</a>
+        <div class="row bg-secondary text-white py-5">
+            <div class="col-12 mb-5">
+                <h1 class="text-center display-4">Components</h1>
+                <h2>Buttons</h2>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-secondary">Secondary</button>
+                <button type="button" class="btn btn-success">Success</button>
+                <button type="button" class="btn btn-danger">Danger</button>
+                <button type="button" class="btn btn-warning">Warning</button>
+                <button type="button" class="btn btn-info">Info</button>
+                <button type="button" class="btn btn-light">Light</button>
+                <button type="button" class="btn btn-dark">Dark</button>
+                <button type="button" class="btn btn-link">Link</button>
+            </div>
+            <div class="col-sm-12 col-md-6 mb-5">
+                <h2>Cards</h2>
+                <div class="card bg-dark">
+                    <img class="card-img-top" src="#" alt="">
+                    <div class="card-body">
+                        <h3 class="card-title">Project 1</h3>
+                        <p class="card-text">This project is the best project. No project has ever been better.</p>
+                        <div class="d-flex justify-content-between">
+                            <a class="btn btn-light" href="#">View Code</a>
+                            <a class="btn btn-light" href="#">View UX</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-12 col-md-3">
-            <div id="card" class="card mb-4">
-                <img class="card-img-top" src="https://via.placeholder.com/375" alt="Placeholder">
-                <div class="card-body">
-                    <h3>The Question Card</h3>
-                    <p>Is card god real?</p>
-                    <p>Am i the only card?</p>
-                    <p>What is my purpose as a card?</p>
-                    <div class="d-flex justify-content-between">
-                        <a class="btn btn-dark" href="#">More Questions</a>
+            <div class="col-sm-12 col-md-6 mb-5">
+                <div class="card bg-dark">
+                    <div class="card-header">
+                        <h3 class="mb-0">Project 2</h3>
+                    </div>
+                    <div class="card-body bg-light text-dark">
+                        <p class="card-text">This project is the second best project. One other project has been better.</p>
+                        <div class="d-flex justify-content-between">
+                            <a class="btn btn-dark" href="#">View Code</a>
+                            <a class="btn btn-dark" href="#">View UX</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-sm-12 col-md-3">
-            <div id="card" class="card mb-4">
-                <img class="card-img-top" src="https://via.placeholder.com/375" alt="Placeholder">
-                <div class="card-body">
-                    <h3>The Question Card</h3>
-                    <p>Is card god real?</p>
-                    <p>Am i the only card?</p>
-                    <p>What is my purpose as a card?</p>
-                    <div class="d-flex justify-content-between">
-                        <a class="btn btn-dark" href="#">More Questions</a>
-                    </div>
-                </div>
+            <div class="col-12">
+                <h2>Badges</h2>
+                <h3>The Auto Web Developer 3000<span class="badge badge-danger ml-2">On Sale</span></h3>
             </div>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12">
-            <h3>Alerts</h3>
         </div>
     </div>
 </body>
