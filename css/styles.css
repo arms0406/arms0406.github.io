@@ -52,6 +52,11 @@
     height: 2.875rem;
 }
 
+.row:nth-child(4) .col-12 {
+    background-color: #0094C6;
+    padding-right: 0;
+}
+
 .footer {
     height: 100px;
     background-color: #0094C6;
@@ -59,4 +64,5 @@
 
 .footer a {
     background-color: #040F16;
+    width: 4.5rem;
 }
