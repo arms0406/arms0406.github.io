@@ -1,7 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind&family=Montserrat:wght@500;700&display=swap');
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h5,
+button,
+a {
+    font-family: montserrat, sans-serif;
+}
+
+p {
+    font-family: hind, sans-serif;
+}
+
 .jumbotron {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../img/home-bg.jpg");
+    background-image: url("../img/home-bg.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -23,12 +38,23 @@
     width: 2rem;
 }
 
+.nav-link {
+    color: #fafafa;
+}
+
 .hero-text {
     color: #fafafa;
-    margin-top: 50vh;
     text-align: center;
     font-family: montserrat, sans-serif;
     font-weight: 500;
+    bottom: 50px;
+    right: 0;
+
+}
+
+.down-arrow {
+    bottom: 20px;
+    left: calc(50% - 16px);
 }
 
 .resume {
@@ -65,4 +91,42 @@
 .footer a {
     background-color: #040F16;
     width: 4.5rem;
+}
+
+/* About Page */
+.bg-primary {
+    background-color: #0094C6 !important;
+}
+
+.about-img {
+    margin-top: 2rem;
+}
+
+.content {
+    margin: 2rem 0rem 2rem;
+}
+
+.row:nth-child(3) .col-12 {
+    background-color: #0094C6;
+    padding-right: 0;
+}
+
+/* Contact */
+.contact-form {
+    margin: 2rem 0rem 2rem;
+    padding: 2rem 1rem 2rem;
+    border-radius: 20px;
+}
+
+.form-label {
+    color: #fafafa;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+@media (min-width: 559px) {
+
+    .hero-text {
+        right: calc(50% - 274px);
+    }
 }
