@@ -122,7 +122,7 @@ p {
 
 /* Contact */
 .contact-form {
-    margin: 2rem auto 2rem;
+    margin: 4rem auto 4rem;
     padding: 2rem 1rem 2rem;
     border-radius: 20px;
     max-width: 812px;
@@ -149,6 +149,14 @@ p {
 @media (min-width: 768px) {
     .footer {
         margin: auto;
+    }
+
+    .about-img {
+        margin: 4rem 0rem 4rem;
+    }
+
+    .content {
+        margin: 4rem 0rem 4rem;
     }
 }
 
