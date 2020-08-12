@@ -83,14 +83,23 @@ p {
     padding-right: 0;
 }
 
-.footer {
-    height: 100px;
+.footer-nav .nav-link {
+    margin-bottom: .5rem;
+}
+
+.social-media {
     background-color: #0094C6;
 }
 
-.footer a {
+.icons {
+    height: 31px;
+}
+
+.top-arrow {
     background-color: #040F16;
     width: 4.5rem;
+    height: 100px;
+    margin-right: 0;
 }
 
 /* About Page */
@@ -99,7 +108,7 @@ p {
 }
 
 .about-img {
-    margin-top: 2rem;
+    margin: 2rem 0rem 2rem;
 }
 
 .content {
@@ -128,5 +137,26 @@ p {
 
     .hero-text {
         right: calc(50% - 274px);
+    }
+}
+
+@media (min-width: 768px) {
+    .footer {
+        margin: auto;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer {
+        margin: auto;
+    }
+
+    .footer-nav .nav-link {
+        display: none;
+    }
+
+    .icons:nth-child(2),
+    .icons:nth-child(3) {
+        margin-left: 3rem;
     }
 }
