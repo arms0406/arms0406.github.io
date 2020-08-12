@@ -93,6 +93,7 @@ p {
 
 .icons {
     height: 31px;
+    margin-bottom: .5rem;
 }
 
 .top-arrow {
@@ -115,7 +116,7 @@ p {
     margin: 2rem 0rem 2rem;
 }
 
-.row:nth-child(3) .col-12 {
+.row:nth-child(3) .full-footer {
     background-color: #0094C6;
     padding-right: 0;
 }
