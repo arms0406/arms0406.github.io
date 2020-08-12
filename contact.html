@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div id="top" class="container-fluid">
+    <div id="top" class="wrapper container-fluid">
         <div class="row">
             <div class="col-12 p-0">
                 <nav class="navbar navbar-expand-md navbar-primary bg-primary">
@@ -32,7 +32,7 @@
         </div>
         <div class="row">
             <div class="col-sm-12">
-                <form class="contact-form bg-primary">
+                <form class="contact-form bg-primary d-flex flex-column">
                     <div class="form-group">
                         <label class="form-label" for="full-name">Full Name</label>
                         <input type="text" class="form-control" id="full-name" placeholder="Required Field">
@@ -46,6 +46,7 @@
                         <textarea class="form-control" id="message" rows="10"
                             placeholder="Type Something..."></textarea>
                     </div>
+                    <button class="btn btn-primary">Submit</button>
                 </form>
             </div>
         </div>
