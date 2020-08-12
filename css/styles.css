@@ -42,6 +42,11 @@ p {
     color: #fafafa;
 }
 
+.active {
+    font-weight: bold;
+    color: #fafafa;
+}
+
 .hero-text {
     color: #fafafa;
     text-align: center;
